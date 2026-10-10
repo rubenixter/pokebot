@@ -9,7 +9,9 @@ A reinforcement learning AI for Pokémon Showdown (Random Battles), inspired by 
 3. Install dependencies: `pip install -r requirements.txt`
 4. Clone the Showdown server: `git clone https://github.com/smogon/pokemon-showdown.git`
 5. In that folder: `npm install`, then `node pokemon-showdown start --no-security`
-6. In a second terminal (with the environment active): `python first_bot.py`
+6. In a second terminal (with the environment active):
+   - `python compare_bots.py --a smart --b random` (bot vs bot)
+   - `python play_vs_bot.py --bot smart` (play against it from http://localhost.psim.us/)
 
 ## Roadmap
 - [x] Environment setup
