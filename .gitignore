@@ -1,0 +1,7 @@
+pokebot-env/
+pokemon-showdown/
+__pycache__/
+*.pyc
+models/
+*.pt
+logs/
