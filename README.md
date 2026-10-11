@@ -13,9 +13,17 @@ A reinforcement learning AI for Pokémon Showdown (Random Battles), inspired by 
    - `python compare_bots.py --a smart --b random` (bot vs bot)
    - `python play_vs_bot.py --bot smart` (play against it from http://localhost.psim.us/)
 
+
+| Matchup | Battles | Win rate |
+|---|---|---|
+| Smart vs Random | 100 | 98% |
+| Smart vs MaxDamage | 200 | 79.5% |
+| SmartV2 vs Smart | 300 | 56.7% |
+
+
 ## Roadmap
 - [x] Environment setup
-- [ ] Random vs. random baseline
-- [ ] Heuristic bot
+- [x] Random vs. random baseline
+- [x] Heuristic bot
 - [ ] PPO agent (Gymnasium + PyTorch)
 - [ ] Self-play and auxiliary heads
