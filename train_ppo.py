@@ -91,8 +91,8 @@ def main():
             tensorboard_log=args.log_dir,
         )
 
-    # The callback counts calls per vectorised step, so divide to keep a checkpoint about every 10k steps.
-    checkpoint = CheckpointCallback(save_freq=max(1, 10_000 // args.n_envs), save_path=args.save_dir, name_prefix="ppo")
+    # The callback counts calls per vectorised step, so divide to keep a checkpoint about every 250k steps.
+    checkpoint = CheckpointCallback(save_freq=max(1, 250_000 // args.n_envs), save_path=args.save_dir, name_prefix="ppo")
     try:
         model.learn(total_timesteps=args.steps, callback=[checkpoint, WinRateCallback()],
                     reset_num_timesteps=not args.resume, tb_log_name=args.run_name)

@@ -1,7 +1,20 @@
-pokebot-env/
-pokemon-showdown/
+# Trained models (yours stay local)
+models/
+*.zip
+
+# Training logs and evaluation results
+models_test/
+runs/
+results/
+
+# Python
 __pycache__/
 *.pyc
-models/
-*.pt
-logs/
+pokebot-env/
+
+# Local Showdown server (install it separately, don't commit it)
+pokemon-showdown/
+
+# Editor / OS
+.vscode/
+.DS_Store
